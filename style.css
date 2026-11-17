@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #e866ea, #764ba2);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    background: white;
+    background: rgb(11, 146, 195);
     width: 100%;
     max-width: 550px;
     padding: 30px;
