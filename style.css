@@ -1,0 +1,138 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 550px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#date {
+    text-align: center;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-width: 0;
+}
+
+.input-section input {
+    flex: 1;
+}
+
+#searchInput {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 11px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4c5fd5;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#taskList {
+    list-style: none;
+}
+
+#taskList li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f4f4f8;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+.task-text {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.priority {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.High { color: red; }
+.Medium { color: orange; }
+.Low { color: green; }
+
+.delete {
+    background: #e74c3c;
+}
+
+.edit {
+    background: #f39c12;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+    .input-section {
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}
